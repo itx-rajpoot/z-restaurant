@@ -1,0 +1,44 @@
+
+  .ant-card-hoverable:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+  .ant-card-hoverable {
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .ant-card-hoverable:hover {
+    background-color: #bae7ff;
+  }
+  
+  /* Phone card specific color */
+  .ant-card-hoverable:nth-child(1) {
+    background-color: #e6f7ff;
+  }
+  
+  .ant-card-hoverable:nth-child(1):hover {
+    background-color: #bae7ff;
+  }
+  
+  /* Email card specific color */
+  .ant-card-hoverable:nth-child(2) {
+    background-color: #fff1b8;
+  }
+  
+  .ant-card-hoverable:nth-child(2):hover {
+    background-color: #ffe58f;
+  }
+  
+  /* Address card specific color */
+  .ant-card-hoverable:nth-child(3) {
+    background-color: #ffe7ba;
+  }
+  
+  .ant-card-hoverable:nth-child(3):hover {
+    background-color: #ffd591;
+  }
+  

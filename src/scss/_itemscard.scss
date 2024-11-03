@@ -1,0 +1,104 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    
+
+}
+
+.card-body {
+    padding: 1rem;
+}
+/* Banner.module.scss */
+
+.banner {
+    background-size: cover;
+        object-fit: cover;
+  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    transition: transform 1s ease-in-out;
+  
+     
+    @media (max-width: 768px) {
+      height: 130px;
+      font-size: 14px;
+    }
+  
+    @media (max-width: 480px) {
+      height: 100px;
+      font-size: 12px;
+    }
+  }
+  
+        // ********banner Section 
+
+  .banner_section{
+    width: 650px;
+    height: 280px;
+    object-fit: cover;
+    background-size: cover;
+    overflow: hidden;
+  
+
+  }
+ 
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+    border-radius: 50%; /* Optional: makes the overlay circular */
+    padding: 10px;
+  }
+  
+  .image-container:hover img {
+ 
+    opacity: 0.5;
+  }
+  
+  .image-container:hover .overlay-cont {
+    opacity: 1;
+  }
+  
+  .overlay-cont svg {
+    font-size: 2rem; /* Equivalent to fs-2 */
+    color: white;
+  }
+  
+
+.next-prve{
+  transition: all 1s;
+}
+
+  .next-prve:hover {
+    border-radius:10px ;
+   
+   background-color: rgb(238, 141, 106);
+   color: white;
+  }

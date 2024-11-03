@@ -1,0 +1,65 @@
+h3{
+    span{
+        color: red;
+    }
+}
+.shop-now:hover{
+    color: white;
+    background-color: black !important;
+    transition: all 0.5s;
+}
+
+
+
+
+
+.card-slider {
+   
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out; /* Smooth lift effect on hover */
+}
+
+
+.card-img-top {
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.5s ease-in-out; 
+}
+
+/* Scale the image on hover */
+.card-img-top:hover {
+    transform: scale(1.1); /* Image zooms in slightly on hover */
+}
+
+/* Center the text inside the card */
+.card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Spacing inside the card */
+}
+
+/* Style for the product name */
+.card-text {
+    font-weight: bold;
+    color: #333; /* Dark grey color for readability */
+}
+
+/* Button styling */
+.add-btn {
+    margin-top: 10px;
+    width: 100%; /* Full width button */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded button corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Change button color on hover */
+.add-btn:hover {
+    background-color: darkred !important;
+    border-color: darkred !important;
+}
+

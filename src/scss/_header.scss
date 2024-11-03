@@ -1,0 +1,28 @@
+.navbar-collapse{
+    ul{
+        gap: 5px;
+        li{
+            .nav-link:hover{
+                background-color: #e9ecef;
+                color: #f86624;
+                // padding: 3px;
+                border-radius: 10px;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+.like-count:hover{
+color: red;
+}
+
+
+
+
+.wishList:hover{
+    background-color: black;
+    color: white;
+   
+
+}

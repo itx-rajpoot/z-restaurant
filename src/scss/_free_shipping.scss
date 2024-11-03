@@ -1,0 +1,42 @@
+.banner-section {
+   
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    transition: transform 1s ease-in-out;
+    
+    
+  }
+  
+  /* Scale the banner on hover */
+
+
+  
+  .banner-section:hover {
+    transform: scale(1.1);
+  }
+  .card_img-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-section p {
+    
+    font-size: 22px;
+    font-weight: 400;
+       margin: 0;
+  }
+  .shop_now{
+text-decoration: underline;
+font-size: 11px;
+
+  }
+  .shop_now:hover{
+color: red;
+
+
+  }
+  
+  
