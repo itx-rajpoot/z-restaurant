@@ -96,6 +96,7 @@ import { deleteObject, ref } from "firebase/storage";
 // ];
 
 
+
 export default function ShowProducts() {
   const [document, setDocument] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -112,7 +113,7 @@ export default function ShowProducts() {
       querySnapshot.forEach((doc) => {
         let data = doc.data();
         array.push(data);
-        
+
 
       });
       setDocument(array);
@@ -122,7 +123,7 @@ export default function ShowProducts() {
     fetchDocument();
   }, []);
   console.log(document);
-  
+
 
   const handleDelete = async (itemId, image) => {
     const desertRef = ref(storage, image);
@@ -137,7 +138,7 @@ export default function ShowProducts() {
       );
     } catch (error) {
       message.error("Error Delete Product");
-    
+
     }
   };
 
@@ -170,9 +171,15 @@ export default function ShowProducts() {
           <tbody>
             {document.length === 0 ? (
               <div className="d-flex align-items-center justify-content-center w-100  min-vh-100 ">
-                <Spin tip="Loading" size="large">
+                {/* <Spin tip="Loading" size="large">
                   {content}
-                </Spin>
+                </Spin> */}
+                <div className="d-flex align-items-center justify-content-center w-100 min-vh-100">
+                  <Spin tip="Loading" size="large">
+                    <div style={{ padding: 50, background: "rgba(0, 0, 0, 0.05)", borderRadius: 4 }} />
+                  </Spin>
+                </div>
+
               </div>
             ) : (
               document.slice(0, limit).map((items, i) => {

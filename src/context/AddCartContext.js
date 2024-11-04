@@ -9,8 +9,9 @@ const cartContext= createContext()
 
 export default function AddCartContext({children}) {
    
-  const {user,isAuthentication}= useAuthContext()
-  // const {uid} = user
+  const { user, isAuthentication } = useAuthContext();
+  const uid = user?.uid; // Extract uid safely in case user is null
+  
   const [cartItems, setCartItems] = useState([]);
   const MAX_CART_ITEMS = 10;
 
